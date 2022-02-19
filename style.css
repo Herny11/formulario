@@ -1,0 +1,151 @@
+body
+{
+    box-sizing: border-box;
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url("img/bg-intro-desktop.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.titulo
+{
+    font-size: 44px;
+    font-weight: bold;
+}
+.parrafo
+{
+    font-size: 16px;
+    font-weight: normal;
+}
+#texto
+{
+    margin: 20% auto;
+}
+.borde
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: hsl(248, 32%, 49%);
+    margin-top: 12%;
+    box-shadow: 0px 5px 5px hsl(249, 10%, 26%, .6);
+}
+.borde span
+{
+    font-size: 12px;
+    
+}
+.container_form
+{
+    margin-top: 20%;
+    margin-right: 10%;
+    margin-left: 0;
+}
+.formulario
+{
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0px 5px 5px hsl(249, 10%, 26%, .6);
+}
+.form1
+{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+.formulario input
+{
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    font-size: 14px;
+}
+.formulario p{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: hsl(246, 25%, 77%);
+    font-size: 10px;
+}
+.formulario .term 
+{
+    color: hsl(0, 100%, 74%)
+}
+#boton
+{
+    color: white;
+    font-size: 13px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: hsl(154, 59%, 51%);
+    box-shadow: 0px 5px 3px hsl(154, 50%, 20%, 1);
+}
+@media (min-width: 375px) and (max-width: 750px)
+{
+    body
+    {
+        background-image: url("img/bg-intro-mobile.png");
+    }
+    .col-6
+    {
+        width: 80%;
+    }
+    .titulo
+    {
+        font-size: 27px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .parrafo
+    {
+
+        margin-top: 0px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .row
+    {
+        
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 35% 65%;
+        align-content: center;
+        margin-top: 2%;
+        justify-items: center;
+    }
+    .borde 
+    {
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .borde span
+    {
+        font-size: 12px;
+        font-weight: lighter;
+    }
+    .container_form
+    {
+        margin-top: 5%;
+        width: 100%;  
+    }
+    .formulario input
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    #boton
+    {
+        font-size: 12px;
+    }
+    
+}
