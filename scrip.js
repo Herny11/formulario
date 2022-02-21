@@ -1,8 +1,18 @@
 function send(){
     if(validateForm()){
         $(".form1").submit();
+        nom = $("#name").val();
+        ema = $("#email").val();
+        sessionStorage.setItem("#name", nom)
+        sessionStorage.setItem("#email", ema);
+        $(".form1").trigger("reset");    
     }
+
 }
+nombre = sessionStorage.getItem("#name");
+email = sessionStorage.getItem("#email");
+var texto = "Hola " + nombre + " hemos recibido tu correo " + email + " y tus datos correctamente."  
+$("#enviado").text(texto); 
 
 function validateForm(){
     var validate = true;
@@ -14,6 +24,7 @@ function validateForm(){
     }else{
         $(".invalid-name").fadeOut();
         $("#name").removeClass("borde-rojo");
+        console.log($("#name").val())
     }
 
     if ($("#last_name").val().trim().length == 0){
@@ -47,9 +58,7 @@ function validateForm(){
         $(".password_validation").fadeOut();
         $("#password").removeClass("borde-rojo");
     }
-
     return validate;
-
 }
 
 function validateEmail(email) {
