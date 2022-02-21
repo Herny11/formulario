@@ -10,6 +10,22 @@ body
     font-family: 'Poppins', sans-serif;
     color: white;
 }
+#enviado
+{
+    background-image: url("img/bg-intro-desktop.png");
+    color: aliceblue;
+    text-align: center;
+    margin-top: 20%;
+
+}
+.invalid-feedback
+{
+    text-align: right;
+    color: hsl(0, 100%, 74%);
+    font-size: 10px;
+    font-weight: lighter;
+    font-style: italic;
+}
 .titulo
 {
     font-size: 44px;
@@ -40,7 +56,7 @@ body
 }
 .container_form
 {
-    margin-top: 20%;
+    margin-top: 15%;
     margin-right: 10%;
     margin-left: 0;
 }
@@ -85,11 +101,29 @@ body
     background-color: hsl(154, 59%, 51%);
     box-shadow: 0px 5px 3px hsl(154, 50%, 20%, 1);
 }
+.borde-rojo
+{
+    border: solid 2px;
+    border-color: hsl(0, 100%, 74%) ;
+    background-image: url("img/icon-error.svg");
+    background-repeat: no-repeat;
+    background-position: 95%;   
+}
+.place::placeholder 
+{
+
+    color: hsl(0, 100%, 74%);
+}
 @media (min-width: 375px) and (max-width: 750px)
 {
     body
     {
         background-image: url("img/bg-intro-mobile.png");
+    }
+    #enviado
+    {
+        font-size: 25px;
+        margin-top: 50%;
     }
     .col-6
     {
@@ -142,6 +176,7 @@ body
         padding-left: 20px;
         font-size: 12px;
         font-weight: bold;
+        color: red;
     }
     #boton
     {

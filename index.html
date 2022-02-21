@@ -26,13 +26,33 @@
                 <div class="container_form">
                     <div class="borde rounded" >Try it free 7 days <span class="span"> then $20/mo. thereafter</span></div>
                     <div class="formulario rounded" id="formulario">
-                        <form class="form1" action="">
-                        <input class="form-control form-control-lg " type="text" id="name" placeholder="First Name">
-                        <input class="form-control form-control-lg " type="text" id="last_name" placeholder="Last Name">
-                        <input class="form-control form-control-lg " type="email"id="email" placeholder="Email Address">
-                        <input class="form-control form-control-lg " type="password" id="password" placeholder="Password" required>
+                        <form class="form1" action="submit.html">
+                                <div>
+                                    <input class="form-control form-control-lg " type="text" id="name" placeholder="First Name" onblur="validateForm()">
+                                    <div class="invalid-feedback invalid-name">
+                                        First Name cannot be empty 
+                                    </div>
+                                </div>
+                                <div>
+                                    <input class="form-control form-control-lg " type="text" id="last_name" placeholder="Last Name" onblur="validateForm()">
+                                    <div class="invalid-feedback last_name_validation">
+                                    Last Name cannot be empty
+                                    </div>
+                                </div>
+                                <div>
+                                    <input class="form-control form-control-lg " type="email" id="email" placeholder="Email Address" onblur="validateForm()">
+                                    <div class="invalid-feedback email_validation">
+                                    Looks like this is not an email
+                                    </div>
+                                </div>
+                                <div>
+                                    <input class="form-control form-control-lg " type="password" id="password" placeholder="Password" onblur="validateForm()">
+                                    <div class="invalid-feedback password_validation">
+                                    Password cannot be empty
+                                    </div>
+                                </div>
                         <div class="d-grid gap-2">
-                            <button type="button" class="btn mt-3" id="boton" onclick="enviar()">CLAIM YOUR FREE TRIAL</button>
+                            <button type="button" class="btn mt-3" id="boton" onclick="send()">CLAIM YOUR FREE TRIAL</button>
                         </div>
                         <p>By clicking the button, you are agreeing to our <span class="term">Terms and Services</span> </p>
                     </form>
